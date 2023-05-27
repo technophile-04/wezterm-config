@@ -1,29 +1,26 @@
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
 
--- This table will hold the configuration.
 local config = {}
 
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
 if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
--- This is where you actually apply your config choices
-
--- For example, changing the color scheme:
+-- Theme & Font
 config.color_scheme = 'tokyonight_night'
 config.font = wezterm.font('STACKr Code')
 config.font_size = 20 
-config.window_background_opacity = 0.80
+
+-- Transparency & Blur for window
+config.window_background_opacity = 0.85
+config.macos_window_background_blur = 40
+
+-- Window frame decoration
 config.window_decorations = "RESIZE"
 config.window_frame = {
   font = wezterm.font('STACKr Code'),
 }
-config.tab_bar_at_bottom = true
-config.show_tab_index_in_tab_bar = false
-config.use_fancy_tab_bar = false
 
 config.window_padding = {
   left = 8,
@@ -31,6 +28,11 @@ config.window_padding = {
   top = 12,
   bottom = 0,
 }
+
+-- Tab bar decoration
+config.tab_bar_at_bottom = true
+config.show_tab_index_in_tab_bar = false
+config.use_fancy_tab_bar = false
 
 config.colors = {
   tab_bar = {
@@ -44,5 +46,4 @@ config.colors = {
   }
 }
 
--- and finally, return the configuration to wezterm
 return config

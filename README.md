@@ -1,1 +1,4 @@
-### 💻 My Wezterm Config 
+## 👾 My Wezterm Config 
+
+### Screenshot 
+![Screenshot](./wezterm-ss.jpg)
