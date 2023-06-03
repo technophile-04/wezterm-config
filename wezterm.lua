@@ -13,8 +13,15 @@ config.font = wezterm.font('STACKr Code')
 config.font_size = 20 
 
 -- Transparency & Blur for window
-config.window_background_opacity = 0.85
-config.macos_window_background_blur = 40
+-- config.window_background_opacity = 0.85
+-- config.macos_window_background_blur = 40
+
+
+-- Bacground image
+config.window_background_image = '/Users/shivbhonde/.config/wezterm/assets/boy_looking_eth.jpg'
+config.window_background_image_hsb = {
+  brightness = 0.013,
+}
 
 -- Window frame decoration
 config.window_decorations = "RESIZE"
