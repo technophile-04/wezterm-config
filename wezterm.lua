@@ -10,11 +10,12 @@ end
 -- Theme & Font
 config.color_scheme = "tokyonight_night"
 config.font = wezterm.font("STACKr Code")
-config.font_size = 22
+config.font_size = 20
 -- config.font_size = 20
 
 -- Transparency & Blur for window
-config.window_background_opacity = 0.85
+-- config.window_background_opacity = 0.85
+config.window_background_opacity = 1
 config.macos_window_background_blur = 40
 
 -- Bacground image
