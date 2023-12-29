@@ -9,25 +9,25 @@ end
 
 -- Theme & Font
 config.color_scheme = "tokyonight_night"
-config.font = wezterm.font("STACKr Code")
-config.font_size = 20
--- config.font_size = 20
+config.font = wezterm.font("Fira Code")
+config.font_size = 18
+-- config.font_size = 18
 
 -- Transparency & Blur for window
+-- config.window_background_opacity = 1
 -- config.window_background_opacity = 0.85
-config.window_background_opacity = 1
-config.macos_window_background_blur = 40
+-- config.macos_window_background_blur = 20
 
 -- Bacground image
--- config.window_background_image = "/Users/shivbhonde/.config/wezterm/assets/boy_looking_eth.jpg"
--- config.window_background_image_hsb = {
--- 	brightness = 0.013,
--- }
+config.window_background_image = "/Users/shivbhonde/.config/wezterm/assets/boy_looking_eth.jpg"
+config.window_background_image_hsb = {
+	brightness = 0.013,
+}
 
 -- Window frame decoration
 config.window_decorations = "RESIZE"
 config.window_frame = {
-	font = wezterm.font("STACKr Code"),
+	font = wezterm.font("Fira Code"),
 }
 
 config.window_padding = {
