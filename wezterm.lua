@@ -19,9 +19,9 @@ config.font_size = 18
 -- config.macos_window_background_blur = 20
 
 -- Bacground image
-config.window_background_image = "/Users/shivbhonde/.config/wezterm/assets/boy_looking_eth.jpg"
+config.window_background_image = "/Users/shivbhonde/.config/wezterm/assets/eth_boy_3.png"
 config.window_background_image_hsb = {
-	brightness = 0.013,
+	brightness = 0.025,
 }
 
 -- Window frame decoration
@@ -46,6 +46,7 @@ config.keys = {
 	{ key = "j", mods = "SUPER", action = wezterm.action({ ActivatePaneDirection = "Down" }) },
 	{ key = "k", mods = "SUPER", action = wezterm.action({ ActivatePaneDirection = "Up" }) },
 	{ key = "l", mods = "SUPER", action = wezterm.action({ ActivatePaneDirection = "Right" }) },
+	{ key = "j", mods = "CMD", action = wezterm.action.SendString("\x01\x54") }, -- open t - tmux smart session manager
 }
 
 -- Tab bar decoration
