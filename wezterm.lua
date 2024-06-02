@@ -24,6 +24,8 @@ config.window_background_image_hsb = {
 	brightness = 0.025,
 }
 
+config.default_prog = { "/bin/zsh", "-l" }
+
 -- Window frame decoration
 config.window_decorations = "RESIZE"
 config.window_frame = {
@@ -47,6 +49,8 @@ config.keys = {
 	{ key = "k", mods = "SUPER", action = wezterm.action({ ActivatePaneDirection = "Up" }) },
 	{ key = "l", mods = "SUPER", action = wezterm.action({ ActivatePaneDirection = "Right" }) },
 	{ key = "j", mods = "CMD", action = wezterm.action.SendString("\x01\x54") }, -- open t - tmux smart session manager
+	{ key = "g", mods = "CMD", action = wezterm.action.SendString("\x01\x67") }, -- open lazygit in tmux
+	{ key = "G", mods = "CMD", action = wezterm.action.SendString("\x01\x47") }, -- open gh dash
 }
 
 -- Tab bar decoration
