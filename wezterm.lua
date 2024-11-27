@@ -21,7 +21,7 @@ config.font_size = 18
 -- Bacground image
 config.window_background_image = "/Users/shivbhonde/.config/wezterm/assets/eth_boy_3.png"
 config.window_background_image_hsb = {
-	brightness = 0.025,
+	brightness = 0.0033,
 }
 
 config.default_prog = { "/bin/zsh", "-l" }
